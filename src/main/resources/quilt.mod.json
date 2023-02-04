@@ -1,0 +1,40 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "cc.irys",
+		"id": "ucompass",
+		"version": "${version}",
+		"metadata": {
+			"name": "uCompass",
+			"description": "Simple client-only visual compass mod.",
+			"license": "EUPL-1.2-or-later",
+			"contributors": {
+				"the Iris System": "Author"
+			},
+			"contact": {
+				"homepage": "https://irys.cc/mc/ucompass",
+				"issues": "https://github.com/u1f408/ucompass/issues",
+				"sources": "https://github.com/u1f408/ucompass"
+			},
+			"icon": "assets/ucompass/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"client_init": "cc.irys.ucompass.UCompass"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.6-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=5.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19.3"
+			}
+		]
+	}
+}
